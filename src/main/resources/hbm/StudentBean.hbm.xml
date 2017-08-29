@@ -1,0 +1,14 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping package="bean">
+    <class name="StudentBean" table="t_stu">
+        <id name="sId" type="java.lang.Integer" column="sId">
+            <generator class="identity"/>
+        </id>
+
+        <property name="sName" type="java.lang.String" column="sName"/>
+        <property name="sAge" type="java.lang.Integer" column="sAge"/>
+    </class>
+
+</hibernate-mapping>
